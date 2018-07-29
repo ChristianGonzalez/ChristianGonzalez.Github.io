@@ -1,0 +1,23 @@
+#content {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+#header {
+    width: 100%;
+    height: 20%;
+    top: 0px;
+}
+ 
+ 
+
+#hero {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: grey;
+}
+
