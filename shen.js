@@ -10,7 +10,7 @@ function responsiveCanvas() {
     'use strict';
     var context = document.getElementById('shenCanvas').getContext('2d'),
         canvas = context.canvas;
-    
+    //Minus 2 since border is 1px big
     canvas.width = window.innerWidth - 2;
     canvas.height = window.innerHeight / 2;
     context.fillStyle = "#3c3c3c";
@@ -34,16 +34,19 @@ function shenInit(context, canvas, requestAnimation){
 
 //THE MAIN LOOP
 function shenLoop(){
-    var context = document.getElementById('solarSystem').getContext("2d"),
-        canvas = context.canvas;
+    var context = document.getElementById('shenCanvas').getContext("2d"),
+        canvas = context.canvas,
+        img = new Image();
 
     //clear canvas then redraw the background
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillStyle = "#3c3c3c";
     context.fillRect(0, 0, window.innerWidth, window.innerHeight);
     
+    img.src = 'images/pic.png';
+    context.drawImage(img, 0, 0);
 
-    window.currentAnimationFrame = window.requestAnimationFrame(planetMovement);
+    window.currentAnimationFrame = window.requestAnimationFrame(shenLoop);
 }
 
 
