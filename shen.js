@@ -11,7 +11,7 @@ function responsiveCanvas() {
     var context = document.getElementById('shenCanvas').getContext('2d'),
         canvas = context.canvas;
     
-    canvas.width = window.innerWidth;
+    canvas.width = window.innerWidth - 2;
     canvas.height = window.innerHeight / 2;
     context.fillStyle = "#3c3c3c";
     context.fillRect(0, 0, window.innerWidth, window.innerHeight);
