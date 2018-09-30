@@ -6,7 +6,7 @@ A game made by friends
 
 * Few values upping and downing
 * Current events that can affect rate of change of values
-* Real-time / by interaction  (?)
+* Real-time / by interaction  (?).
 * User has to change behavior / play style according to current events 
   - Dynamicity into the game
   - Not necesarrily interactable / notification
