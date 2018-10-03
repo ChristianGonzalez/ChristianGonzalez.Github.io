@@ -1,6 +1,14 @@
 # Shen
 A game made by friends
 
+## Installation
+
+* Install Node (8.12+)
+* `npm i` in root of project
+* `npm start`
+
+## Notes
+
 * Like Reigns - make decisions that affect a few values
 * Like paperclips - hire on employees for example that affect values, increase productivity, etc
 
